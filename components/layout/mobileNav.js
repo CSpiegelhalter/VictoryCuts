@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import Logo from './logo';
-import classes from './main-navigation.module.css';
+import classes from './mobileNav.css';
 
-function MainNavigation() {
+function MobileNav() {
   return (
     <header className={classes.header}>
       <Link href='/'>
@@ -34,4 +34,4 @@ function MainNavigation() {
   );
 }
 
-export default MainNavigation;
+export default MobileNav;

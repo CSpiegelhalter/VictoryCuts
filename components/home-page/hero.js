@@ -10,12 +10,12 @@ function Hero() {
           src={lawn}
           alt='Lawncare Pensacola, Florida'
         />
-
-      <h1 className='lawnservice'>
-      Want a manicured lawn?<br /> We provide the best lawncare service in Pensacola!
-
-      </h1>
-      
+      <div className={classes.glass}>
+        <h1 className='lawnservice'>
+          Want a manicured lawn?<br /><br /> We provide the best lawncare service in Pensacola!
+        
+        </h1>
+      </div>
     </section>
   );
 }
