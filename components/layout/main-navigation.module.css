@@ -23,6 +23,7 @@
 }
 
 .header li {
+  font-size: larger;
   margin: 3px;
   padding: 2px;
   border-top: 2px solid transparent;

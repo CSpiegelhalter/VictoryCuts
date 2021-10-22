@@ -1,17 +1,23 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 import Logo from './logo';
-import classes from './mobileNav.css';
+import { MenuToggle } from './menuToggle';
+import classes from './mobileNav.module.css';
 
 function MobileNav() {
+
+    const [isOpen, setOpen] = useState(false)
   return (
-    <header className={classes.header}>
+    <div className={classes.header}>
+        
       <Link href='/'>
         <a>
           <Logo />
         </a>
       </Link>
-      <nav>
+      <MenuToggle className={classes.menu} isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
+      {isOpen && <div>
         <ul>
         <li>
             <Link href='/about'>Home</Link>
@@ -29,8 +35,9 @@ function MobileNav() {
             <Link href='/about'>Blog</Link>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>}
+    </div>
+    
   );
 }
 

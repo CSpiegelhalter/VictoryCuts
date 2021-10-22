@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import classes from './menuToggle.module.css'
 
 
 
@@ -16,7 +17,7 @@ const transition = { duration: 0.33 };
 
 export function MenuToggle({ toggle, isOpen }) {
   return (
-    <Button onClick={toggle}>
+    <button className={classes.button} onClick={toggle}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           animate={isOpen ? "open" : "closed"}
@@ -48,6 +49,6 @@ export function MenuToggle({ toggle, isOpen }) {
           transition={transition}
         />
       </svg>
-    </Button>
+    </button>
   );
 }

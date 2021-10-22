@@ -1,0 +1,9 @@
+.button {
+  z-index: 99;
+  cursor: pointer;
+  position: absolute;
+  align-self: center;
+  right: 5vw;
+  border: none;
+  background-color: #E8E1D9;
+}
