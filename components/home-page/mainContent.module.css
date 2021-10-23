@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
+    -moz-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
+    box-shadow: 0 -1px 3px rgb(15, 15, 15, 013);
+    z-index: 10;
+}
+
+.p {
+    margin: 0;
+}
