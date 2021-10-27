@@ -17,7 +17,7 @@ function MobileNav() {
         </a>
       </Link>
       <MenuToggle className={classes.menu} isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
-      {isOpen && <div>
+      {isOpen && <div className={classes.navv}>
         <ul>
         <li>
             <Link href='/about'>Home</Link>

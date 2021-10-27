@@ -1,14 +1,15 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Playfair Display', serif;
-    background-color: #E8E1D9;
-    color: #125C13;
+    background-color: #ffffff;
+    color: black;
     letter-spacing:1px;
 font-weight:bold;
-max-width: 100%;
-    overflow-x: hidden;
+width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 a {
