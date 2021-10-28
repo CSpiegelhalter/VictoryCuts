@@ -48,6 +48,7 @@
 /* CSS */
 .button {
   background-color: #4D774E;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
   border: 1px solid #125C13;
   border-radius: 8px;
   box-sizing: border-box;
