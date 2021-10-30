@@ -1,15 +1,13 @@
 import Image from 'next/image';
-import lawn from '../images/lawn.jpg'
+// import lawn from '../images/lawn.jpg'
 import classes from './hero.module.css';
 
 function Hero() {
   return (
     <section className={classes.hero}>
 
-      <Image className={classes.raw}
-        src={lawn}
-        alt='Lawncare Pensacola, Florida'
-      /> <div className={classes.glass}>
+      <div className={classes.raw}>
+     </div> <div className={classes.glass}>
       <h1 className={classes.h1}>
         WANT A MANICURED LAWN?<br /><br />WE PROVIDE THE BEST LAWNCARE SERVICE IN PENSACOLA!
       </h1>

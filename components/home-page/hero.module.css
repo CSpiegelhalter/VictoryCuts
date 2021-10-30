@@ -5,13 +5,15 @@
   display: flex;
   width: 100%;
   margin: 0;
+  
 }
 
 .raw {
+  background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url('../images/lawn.jpg');
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 50%;
+  height: 85vh;
 }
 
 .glass {
