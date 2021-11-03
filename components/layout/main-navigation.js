@@ -14,11 +14,11 @@ function MainNavigation() {
       <nav>
         <ul>
         <li>
-            <Link href='/about'>Home</Link>
+            <Link href='/'>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/about'>Reviews</Link>
-          </li>
+          </li> */}
           <li>
             <Link href='/about'>About</Link>
           </li>

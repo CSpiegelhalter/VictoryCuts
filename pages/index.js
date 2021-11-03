@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import MainContent from '../components/home-page/mainContent';
 import Hero from '../components/home-page/hero';
+
 // import { getFeaturedPosts } from '../lib/posts-util';
 
 function HomePage(props) {
