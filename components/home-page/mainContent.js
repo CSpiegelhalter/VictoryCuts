@@ -1,9 +1,7 @@
 import classes from './mainContent.module.css'
-import Image from 'next/image';
-import mower from '../images/lawnmower.png'
-import quotation from '../images/quotation.png'
 
 function MainContent() {
+
     return (
         <section className={classes.about}>
             <div className={classes.gg}></div>
@@ -17,14 +15,14 @@ function MainContent() {
                     <div className={classes.sections}>
                         <h3>Call for a quote</h3>
                         <div className={classes.icons}>
-                            <Image src={quotation} alt='Call for quote' />
+                            <img src={'../../quotation.png'} alt='Call for quote' />
                         </div>
                     </div>
                     <div className={classes.vl}></div>
                     <div className={classes.sections}>
                         <h3>Recieve Service</h3>
                         <div className={classes.icons}>
-                            <Image src={mower} alt='lawn mower' />
+                            <img src={'../../lawnmower.png'} alt='lawn mower' />
                         </div>
                     </div>
 
@@ -56,7 +54,7 @@ function MainContent() {
                     </div>
                 </div>
             </div>
-            
+
         </section>
     )
 }

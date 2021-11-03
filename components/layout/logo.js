@@ -1,11 +1,11 @@
 import classes from './logo.module.css';
 import Image from 'next/image';
-import myLogo from '../images/logo.png'
+import myLogo from '../../public/logo.png'
 
 function Logo() {
   return (
-  <Image
-    src= {myLogo}
+  <img
+    src= {'../../logo.png'}
     alt='Lawncare Pensacola, Florida'
     width={75}
     height={75}
