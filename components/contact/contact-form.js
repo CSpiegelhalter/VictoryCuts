@@ -1,141 +1,182 @@
-import { useState, useEffect } from 'react';
+import React, { Component, useEffect } from 'react'
+import {withRouter} from 'next/router'
+import * as emailjs from 'emailjs-com'
+import classes from './contact-form.module.css'
+import { WithRouterProps } from 'next/dist/client/with-router'
 
-import classes from './contact-form.module.css';
-// import Notification from '../ui/notification';
+import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
 
-async function sendContactData(contactDetails) {
-  const response = await fetch('/api/contact', {
-    method: 'POST',
-    body: JSON.stringify(contactDetails),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+class ContactForm extends Component {
+  state = {
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  }
 
-  const data = await response.json();
+  handleSubmit(e) {
+    e.preventDefault()
+    const { name, email, phone, subject, message } = this.state
+    let templateParams = {
+      from_name: email,
+      name: name,
+      to_name: 'curt',
+      phone: phone,
+      subject: subject,
+      message: message,
+    }
+    emailjs.send('service_nsgmlqh', 'template_3qguufu',
+      templateParams,
 
-  if (!response.ok) {
-    throw new Error(data.message || 'Something went wrong!');
+      'user_lXEJ3tVjlgD8uNOO5FOLn'
+    )
+
+
+    this.resetForm()
+  }
+  resetForm() {
+    
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    })
+  }
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value })
+  }
+
+  componentDidMount() {
+
+    
+
+    const isNumericInput = (event) => {
+      const key = event.keyCode;
+      return ((key >= 48 && key <= 57) || // Allow number line
+        (key >= 96 && key <= 105) // Allow number pad
+      );
+    };
+
+    const isModifierKey = (event) => {
+      const key = event.keyCode;
+      return (event.shiftKey === true || key === 35 || key === 36) || // Allow Shift, Home, End
+        (key === 8 || key === 9 || key === 13 || key === 46) || // Allow Backspace, Tab, Enter, Delete
+        (key > 36 && key < 41) || // Allow left, up, right, down
+        (
+          // Allow Ctrl/Command + A,C,V,X,Z
+          (event.ctrlKey === true || event.metaKey === true) &&
+          (key === 65 || key === 67 || key === 86 || key === 88 || key === 90)
+        )
+    };
+
+    const enforceFormat = (event) => {
+      // Input must be of a valid number format or a modifier key, and not longer than ten digits
+      if (!isNumericInput(event) && !isModifierKey(event)) {
+        event.preventDefault();
+      }
+    };
+
+    const formatToPhone = (event) => {
+      if (isModifierKey(event)) { return; }
+
+      // I am lazy and don't like to type things more than once
+      const target = event.target;
+      const input = event.target.value.replace(/\D/g, '').substring(0, 10); // First ten digits of input only
+      const zip = input.substring(0, 3);
+      const middle = input.substring(3, 6);
+      const last = input.substring(6, 10);
+
+      if (input.length > 6) { target.value = `(${zip}) ${middle} - ${last}`; }
+      else if (input.length > 3) { target.value = `(${zip}) ${middle}`; }
+      else if (input.length > 0) { target.value = `(${zip}`; }
+    };
+
+    const inputElement = document.getElementById('phoneNumber');
+    inputElement.addEventListener('keydown', enforceFormat);
+    inputElement.addEventListener('keyup', formatToPhone);
+
+  }
+
+  
+
+  render() {
+
+    const { router } = this.props
+    return (
+      <>
+        <div id="contact" className={classes.contactForm}>
+          <h1 className={classes.heading1}>Let's talk!</h1>
+          <Form onSubmit={this.handleSubmit.bind(this)}>
+            <FormGroup controlId="formBasicEmail">
+              <Label className={classes.text}>Email address*</Label>
+              <Input
+                type="email"
+                name="email"
+                required
+                value={this.state.email}
+                className={classes.textprimary}
+                onChange={this.handleChange.bind(this, 'email')}
+                placeholder="Enter email"
+              />
+            </FormGroup>
+            <FormGroup controlId="formBasicPhone">
+              <Label className={classes.text}>Phone number</Label>
+              <Input
+                type="tel"
+                id="phoneNumber"
+                name="phone"
+                maxlength="16"
+                value={this.state.phone}
+                className={classes.textprimary}
+                onChange={this.handleChange.bind(this, 'phone')}
+                placeholder="Enter Phone number"
+              />
+
+            </FormGroup>
+            <FormGroup controlId="formBasicName">
+              <Label className={classes.text}>Name*</Label>
+              <Input
+                type="text"
+                name="name"
+                value={this.state.name}
+                required
+                className={classes.textprimary}
+                onChange={this.handleChange.bind(this, 'name')}
+                placeholder="Name"
+              />
+            </FormGroup>
+            <FormGroup controlId="formBasicSubject">
+              <Label className={classes.text}>Subject</Label>
+              <Input
+                type="text"
+                name="subject"
+                className={classes.textprimary}
+                value={this.state.subject}
+                onChange={this.handleChange.bind(this, 'subject')}
+                placeholder="Subject"
+              />
+            </FormGroup>
+            <FormGroup controlId="formBasicMessage">
+              <Label className={classes.text}>Message*</Label>
+              <Input
+                type="textarea"
+                name="message"
+                required
+                className={classes.textprimary}
+                value={this.state.message}
+                onChange={this.handleChange.bind(this, 'message')}
+              />
+            </FormGroup>
+            <Button variant="primary" type="submit" onClick={() => router.push('/thanks')}>
+              Submit
+            </Button>
+          </Form>
+        </div>
+      </>
+    )
   }
 }
-
-function ContactForm() {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredName, setEnteredName] = useState('');
-  const [enteredMessage, setEnteredMessage] = useState('');
-  const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
-  const [requestError, setRequestError] = useState();
-
-  useEffect(() => {
-    if (requestStatus === 'success' || requestStatus === 'error') {
-      const timer = setTimeout(() => {
-        setRequestStatus(null);
-        setRequestError(null);
-      }, 3000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [requestStatus]);
-
-  async function sendMessageHandler(event) {
-    event.preventDefault();
-
-    // optional: add client-side validation
-
-    setRequestStatus('pending');
-
-    try {
-      await sendContactData({
-        email: enteredEmail,
-        name: enteredName,
-        message: enteredMessage,
-      });
-      setRequestStatus('success');
-      setEnteredMessage('');
-      setEnteredEmail('');
-      setEnteredName('');
-    } catch (error) {
-      setRequestError(error.message);
-      setRequestStatus('error');
-    }
-  }
-
-  let notification;
-
-  if (requestStatus === 'pending') {
-    notification = {
-      status: 'pending',
-      title: 'Sending message...',
-      message: 'Your message is on its way!',
-    };
-  }
-
-  if (requestStatus === 'success') {
-    notification = {
-      status: 'success',
-      title: 'Success!',
-      message: 'Message sent successfully!',
-    };
-  }
-
-  if (requestStatus === 'error') {
-    notification = {
-      status: 'error',
-      title: 'Error!',
-      message: requestError,
-    };
-  }
-
-  return (
-    <section className={classes.contact}>
-      <h1>How can I help you?</h1>
-      <form className={classes.form} onSubmit={sendMessageHandler}>
-        <div className={classes.controls}>
-          <div className={classes.control}>
-            <label htmlFor='email'>Your Email</label>
-            <input
-              type='email'
-              id='email'
-              required
-              value={enteredEmail}
-              onChange={(event) => setEnteredEmail(event.target.value)}
-            />
-          </div>
-          <div className={classes.control}>
-            <label htmlFor='name'>Your Name</label>
-            <input
-              type='text'
-              id='name'
-              required
-              value={enteredName}
-              onChange={(event) => setEnteredName(event.target.value)}
-            />
-          </div>
-        </div>
-        <div className={classes.control}>
-          <label htmlFor='message'>Your Message</label>
-          <textarea
-            id='message'
-            rows='5'
-            required
-            value={enteredMessage}
-            onChange={(event) => setEnteredMessage(event.target.value)}
-          ></textarea>
-        </div>
-
-        <div className={classes.actions}>
-          <button>Send Message</button>
-        </div>
-      </form>
-      {notification && (
-        <Notification
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
-      )}
-    </section>
-  );
-}
-
-export default ContactForm;
+export default withRouter(ContactForm)

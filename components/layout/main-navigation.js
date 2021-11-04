@@ -25,9 +25,9 @@ function MainNavigation() {
           <li>
             <Link href='/contact'>Contact</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/about'>Blog</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

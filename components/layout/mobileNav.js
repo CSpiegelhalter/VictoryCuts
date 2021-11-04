@@ -20,20 +20,20 @@ function MobileNav() {
       {isOpen && <div className={classes.navv}>
         <ul>
         <li>
-            <Link href='/about'>Home</Link>
+            <Link href='/'>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/about'>Reviews</Link>
-          </li>
+          </li> */}
           <li>
             <Link href='/about'>About</Link>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/about'>Blog</Link>
-          </li>
+          </li> */}
         </ul>
       </div>}
     </div>

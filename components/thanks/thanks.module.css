@@ -1,0 +1,21 @@
+.contain {
+    border: 2px solid black;
+    /* margin-top: 20vh; */
+    margin: 30vh 250px 20vh 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    background-color: #9DC88D;
+    -webkit-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
+    -moz-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
+    box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
+}
+
+.content {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    color: #ffffff;
+}
