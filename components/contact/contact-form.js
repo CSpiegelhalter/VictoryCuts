@@ -11,19 +11,17 @@ class ContactForm extends Component {
     name: '',
     email: '',
     phone: '',
-    subject: '',
     message: '',
   }
 
   handleSubmit(e) {
     e.preventDefault()
-    const { name, email, phone, subject, message } = this.state
+    const { name, email, phone, message } = this.state
     let templateParams = {
       from_name: email,
       name: name,
       to_name: 'curt',
       phone: phone,
-      subject: subject,
       message: message,
     }
     emailjs.send('service_nsgmlqh', 'template_3qguufu',
@@ -41,7 +39,6 @@ class ContactForm extends Component {
       name: '',
       email: '',
       phone: '',
-      subject: '',
       message: '',
     })
   }
@@ -108,69 +105,60 @@ class ContactForm extends Component {
     return (
       <>
         <div id="contact" className={classes.contactForm}>
-          <h1 className={classes.heading1}>Let's talk!</h1>
-          <Form onSubmit={this.handleSubmit.bind(this)}>
-            <FormGroup controlId="formBasicEmail">
-              <Label className={classes.text}>Email address*</Label>
+          <h1 className={classes.heading1}>Call us: (111)111-1111</h1>
+          <h1 className={classes.heading}>OR</h1>
+          <h1 className={classes.heading1}>Send us a message.</h1>
+          <Form className={classes.form} onSubmit={this.handleSubmit.bind(this)}>
+            <FormGroup className={classes.formgroup}>
+              
               <Input
                 type="email"
                 name="email"
                 required
                 value={this.state.email}
-                className={classes.textprimary}
+                className={classes.input}
                 onChange={this.handleChange.bind(this, 'email')}
-                placeholder="Enter email"
               />
+              <Label className={classes.label}>Email address*</Label>
             </FormGroup>
-            <FormGroup controlId="formBasicPhone">
-              <Label className={classes.text}>Phone number</Label>
+            <FormGroup className={classes.formgroup}>
               <Input
                 type="tel"
                 id="phoneNumber"
                 name="phone"
                 maxlength="16"
+                required
                 value={this.state.phone}
-                className={classes.textprimary}
+                className={classes.input}
                 onChange={this.handleChange.bind(this, 'phone')}
-                placeholder="Enter Phone number"
               />
-
+              <Label className={classes.label}>Phone number*</Label>
             </FormGroup>
-            <FormGroup controlId="formBasicName">
-              <Label className={classes.text}>Name*</Label>
+            <FormGroup className={classes.formgroup}>
+              
               <Input
                 type="text"
                 name="name"
                 value={this.state.name}
                 required
-                className={classes.textprimary}
+                className={classes.input}
                 onChange={this.handleChange.bind(this, 'name')}
-                placeholder="Name"
               />
+              <Label className={classes.label}>Name*</Label>
             </FormGroup>
-            <FormGroup controlId="formBasicSubject">
-              <Label className={classes.text}>Subject</Label>
-              <Input
-                type="text"
-                name="subject"
-                className={classes.textprimary}
-                value={this.state.subject}
-                onChange={this.handleChange.bind(this, 'subject')}
-                placeholder="Subject"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicMessage">
-              <Label className={classes.text}>Message*</Label>
+            <FormGroup className={classes.formgroup}>
+              
               <Input
                 type="textarea"
                 name="message"
                 required
-                className={classes.textprimary}
+                className={classes.input}
                 value={this.state.message}
                 onChange={this.handleChange.bind(this, 'message')}
               />
+              <Label className={classes.label}>Message*</Label>
             </FormGroup>
-            <Button variant="primary" type="submit" onClick={() => router.push('/thanks')}>
+            <Button className={classes.button} variant="primary" type="submit" onClick={() => router.push('/thanks')}>
               Submit
             </Button>
           </Form>

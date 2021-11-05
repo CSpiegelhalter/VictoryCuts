@@ -78,12 +78,12 @@
 }
 
 .button:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  box-shadow: #222222 0 0 0 2px, #164A41 0 0 0 4px;
   transition: box-shadow .2s;
 }
 
 .button:active {
-  background-color: #E8E1D9;
+  background-color: #164A41;
   border-color: #F4A442;
   transform: translate(-50%, -50%) scale(.96);
 }

@@ -1,3 +1,110 @@
 .contactForm {
-  margin-top: 20vh;
+  /* background-color: #9DC88D; */
+  /* border: 3px solid black; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 11vh 250px 20vh 250px;
+  align-items: center;
+ 
+
+}
+
+.form {
+  
+    color: black;
+}
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+  
+}
+
+
+.label {
+  position: absolute;
+  margin: auto;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+.formgroup .input:focus ~ label,
+.formgroup .input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f1b24a;
+  font-size: 12px;
+}
+
+.button {
+  background-color: #4D774E;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px solid #125C13;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  margin: auto;
+  margin-top: 30px;
+  outline: none;
+  padding: 23px 90px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  z-index: 10;
+  /* top: 95%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, #164A41 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button:active {
+  background-color: #164A41;
+  border-color: #F4A442;
+  transform: translate(-50%, -50%) scale(.96);
+}
+
+.button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.heading1 {
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
