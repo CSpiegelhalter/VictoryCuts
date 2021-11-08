@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import Logo from '../layout/logo';
 import classes from './footer.module.css';
+import { useRouter } from 'next/router';
 
 function Footer() {
+    const router = useRouter()
   return (
     <section className={classes.top}>
       <div className={classes.foot}>
           <h5 className={classes.topHeader}>The best in Pensacola</h5>
           <h1 className={classes.bigHeader}>Request our Services</h1>
-          <button className={classes.button} role="button">CONTACT US</button>
+          <button className={classes.button} onClick={() => router.push('/contact')}  role="button">CONTACT US</button>
           <p className={classes.llc}>@ 2021 Victory Cuts, LLC</p>
           <div className={classes.line}></div>
 
