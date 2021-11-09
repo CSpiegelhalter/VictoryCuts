@@ -34,8 +34,8 @@ function MainContent() {
                     <h2 className={classes.head}>Services we provide:</h2>
                     <div className={classes.services}>
                         <div className={classes.left}>
-                            <img className={classes.examples} src={'../../lawn2.webp'} />
-                            <ul className={classes.each}>
+                            <img className={classes.examples} src={'../../lawn2.webp'} alt={'Lawn Mowing'}/>
+                            <ul className={classes.eachL}>
                                 <li>Lawn Mowing</li>
                                 <li>Edging</li>
                                 <li>Lawn Aeration</li>
@@ -44,18 +44,18 @@ function MainContent() {
                             </ul>
                         </div>
                         <div className={classes.right}>
-                            <ul className={classes.each}>
+                            <ul className={classes.eachR}>
                                 <li>Landscaping</li>
                                 <li>Planting</li>
                                 <li>Lawn Fertilizing</li>
                                 <li>Leaf Removal</li>
                                 <li>Area Prep</li>
                             </ul>
-                            <img className={classes.examples} src={'../../landscaping.webp'} />
+                            <img className={classes.examples} src={'../../landscaping.webp'} alt={'Landscaping'} />
                         </div>
                         <div className={classes.left}>
-                        <img className={classes.examples} src={'../../hedges.webp'} />
-                            <ul className={classes.each}>
+                        <img className={classes.examples} src={'../../hedges.webp'} alt={'Hedge Trimming'}/>
+                            <ul className={classes.eachL}>
                                 <li>Weed-eating</li>
                                 <li>Raking Services</li>
                                 <li>Weeding</li>

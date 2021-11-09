@@ -126,18 +126,23 @@
   .services {
       display: flex;
       flex-direction: column;
+      margin: auto;
       margin-top: 70px;
-      gap: 80px;
+      width: 860px;
+      /* gap: 80px; */
   }
 
-.each {
-    top: 0;
-    margin-top: 0;
-    margin-left: 100px;
-    margin-right: 100px;
+.eachL {
+     margin: auto;
 }
-  .each li {
-      font-size: 18px;
+
+.eachR {
+
+     margin: auto;
+}
+  .eachR li,
+  .eachL li {
+      font-size: 1.3rem;
       margin: 5px;
       top: 0;
       padding: 6px;
@@ -155,23 +160,29 @@
   .examples {
     /* display: inline-block !important; */
     /* float: left; */
-    height: 200px;
-    width: 300px;
-    margin-left: 75px;
-    border-radius: 10%;
+    height: 270px;
+    width: 430px;
+    /* margin: auto; */
+    /* margin-left: 75px; */
+    /* border-radius: 10%; */
     -webkit-box-shadow: inset 0px 0px 25px -4px #000000; 
     box-shadow: inset 0px 0px 25px -4px #000000;
   }
 
   .left {
       display: flex;
-      justify-content: space-between;
-      float: left;
+      justify-content: space-around;
+      right: 0;
+      /* margin-right: auto; */
+      /* float: left; */
+      /* gap: 20vw; */
   }
 
   .right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    right: 0;
+    /* gap: 20vw; */
     /* margin-left: auto; */
-    margin-right: 75px;
+    /* margin-right: 175px; */
   }
