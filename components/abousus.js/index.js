@@ -1,4 +1,6 @@
 import classes from './aboutus.module.css'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 function Aboutus() {
     return(

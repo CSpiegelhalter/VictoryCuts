@@ -31,23 +31,24 @@ function MainContent() {
 
             <div>
                 <div className={classes.why}>
-                    <h2 className={classes.head}>Our services:</h2>
+                    <h2 className={classes.head}>Services we provide:</h2>
                     <div className={classes.services}>
+                        <img className={classes.examples} src={'../../lawn2.jpg'} />
                         <ul className={classes.each}>
                             <li>Lawn Mowing</li>
-                            <li>Landscaping</li>
+                            <li>Edging</li>
                             <li>Lawn Aeration</li>
-                            <li>Lawn Winterization</li>
+                            <li>Hedge Trimming</li>
                         </ul>
                         <ul className={classes.each}>
+                            <li>Landscaping</li>
                             <li>Planting</li>
                             <li>Lawn Fertilizing</li>
-                            <li>Seeding</li>
                             <li>Leaf Removal</li>
                         </ul>
                         <ul className={classes.each}>
+                            <li>Weed-eating</li>
                             <li>Raking Services</li>
-                            <li>Top Soil/Fill Dirt</li>
                             <li>Weeding</li>
                             <li>Tree Trimming</li>
                         </ul>

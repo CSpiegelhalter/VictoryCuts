@@ -2,7 +2,7 @@
   background-color: #4D774E;
   top: 0;
   width: 100%;
-  position:absolute;
+  position:fixed;
   color: #ffffff;
   max-height: 5rem;
   display: flex;

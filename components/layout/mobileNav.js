@@ -26,7 +26,7 @@ function MobileNav() {
             <Link href='/about'>Reviews</Link>
           </li> */}
           <li>
-            <Link href='/about'>About</Link>
+            <Link href='/about' onClick={window.scrollTo(0, 0)}>About</Link>
           </li>
           <li>
             <Link href='/contact'>Contact</Link>
