@@ -15,14 +15,14 @@ function MainContent() {
                     <div className={classes.sections}>
                         <h3>Call for a quote</h3>
                         <div className={classes.icons}>
-                            <img src={'../../quotation.png'} alt='Call for quote' />
+                            <img src={'../../quotation.webp'} alt='Call for quote' />
                         </div>
                     </div>
                     <div className={classes.vl}></div>
                     <div className={classes.sections}>
                         <h3>Recieve Service</h3>
                         <div className={classes.icons}>
-                            <img src={'../../lawnmower.png'} alt='lawn mower' />
+                            <img src={'../../lawnmower.webp'} alt='lawn mower' />
                         </div>
                     </div>
 
@@ -34,30 +34,33 @@ function MainContent() {
                     <h2 className={classes.head}>Services we provide:</h2>
                     <div className={classes.services}>
                         <div className={classes.left}>
-                            <img className={classes.examples} src={'../../lawn2.jpg'} />
+                            <img className={classes.examples} src={'../../lawn2.webp'} />
                             <ul className={classes.each}>
                                 <li>Lawn Mowing</li>
                                 <li>Edging</li>
                                 <li>Lawn Aeration</li>
                                 <li>Hedge Trimming</li>
+                                <li>Fertilization</li>
                             </ul>
                         </div>
                         <div className={classes.right}>
-                        <img className={classes.examples} src={'../../landscaping.jpg'} />
                             <ul className={classes.each}>
                                 <li>Landscaping</li>
                                 <li>Planting</li>
                                 <li>Lawn Fertilizing</li>
                                 <li>Leaf Removal</li>
+                                <li>Area Prep</li>
                             </ul>
+                            <img className={classes.examples} src={'../../landscaping.webp'} />
                         </div>
                         <div className={classes.left}>
-                        <img className={classes.examples} src={'../../hedges.png'} />
+                        <img className={classes.examples} src={'../../hedges.webp'} />
                             <ul className={classes.each}>
                                 <li>Weed-eating</li>
                                 <li>Raking Services</li>
                                 <li>Weeding</li>
                                 <li>Tree Trimming</li>
+                                <li>Basic Gardening</li>
                             </ul>
                         </div>
                     </div>
