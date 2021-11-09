@@ -20,8 +20,10 @@
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
+    font-weight: normal;
 }
 .tit2 {
+    font-weight: normal;
     margin: auto;
     color: #ffffff;
     margin-top: 6vh;
@@ -101,6 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: normal;
 }
 
 .vl {

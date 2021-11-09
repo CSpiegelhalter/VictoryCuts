@@ -17,8 +17,10 @@
 }
 .topHeader {
     margin-top: 10vh; 
+    font-weight: normal;
 }
 .bigHeader {
+    font-weight: normal;
     margin: 0;
     font-size: xxx-large;
 }

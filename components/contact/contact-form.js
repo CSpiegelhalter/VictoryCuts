@@ -1,6 +1,6 @@
 import React, { Component, useEffect } from 'react'
 import {withRouter} from 'next/router'
-import * as emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 import classes from './contact-form.module.css'
 import { WithRouterProps } from 'next/dist/client/with-router'
 
@@ -15,6 +15,7 @@ class ContactForm extends Component {
   }
 
   handleSubmit(e) {
+    const { router } = this.props
     e.preventDefault()
     const { name, email, phone, message } = this.state
     let templateParams = {
@@ -24,14 +25,21 @@ class ContactForm extends Component {
       phone: phone,
       message: message,
     }
+
     emailjs.send('service_nsgmlqh', 'template_3qguufu',
       templateParams,
 
       'user_lXEJ3tVjlgD8uNOO5FOLn'
-    )
+    ) .then((result) => {
+      console.log(result.text);
+  }, (error) => {
+      console.log(error.text);
+  });
 
+    console.log( templateParams);
 
     this.resetForm()
+    router.push('/thanks')
   }
   resetForm() {
     
@@ -101,7 +109,7 @@ class ContactForm extends Component {
 
   render() {
 
-    const { router } = this.props
+    
     return (
       <>
         <div id="contact" className={classes.contactForm}>
@@ -158,7 +166,7 @@ class ContactForm extends Component {
               />
               <Label className={classes.label}>Message*</Label>
             </FormGroup>
-            <Button className={classes.button} variant="primary" type="submit" onClick={() => router.push('/thanks')}>
+            <Button className={classes.button} variant="primary" type="submit">
               Submit
             </Button>
           </Form>
