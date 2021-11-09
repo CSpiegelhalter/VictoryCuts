@@ -33,25 +33,33 @@ function MainContent() {
                 <div className={classes.why}>
                     <h2 className={classes.head}>Services we provide:</h2>
                     <div className={classes.services}>
-                        <img className={classes.examples} src={'../../lawn2.jpg'} />
-                        <ul className={classes.each}>
-                            <li>Lawn Mowing</li>
-                            <li>Edging</li>
-                            <li>Lawn Aeration</li>
-                            <li>Hedge Trimming</li>
-                        </ul>
-                        <ul className={classes.each}>
-                            <li>Landscaping</li>
-                            <li>Planting</li>
-                            <li>Lawn Fertilizing</li>
-                            <li>Leaf Removal</li>
-                        </ul>
-                        <ul className={classes.each}>
-                            <li>Weed-eating</li>
-                            <li>Raking Services</li>
-                            <li>Weeding</li>
-                            <li>Tree Trimming</li>
-                        </ul>
+                        <div className={classes.left}>
+                            <img className={classes.examples} src={'../../lawn2.jpg'} />
+                            <ul className={classes.each}>
+                                <li>Lawn Mowing</li>
+                                <li>Edging</li>
+                                <li>Lawn Aeration</li>
+                                <li>Hedge Trimming</li>
+                            </ul>
+                        </div>
+                        <div className={classes.right}>
+                        <img className={classes.examples} src={'../../landscaping.jpg'} />
+                            <ul className={classes.each}>
+                                <li>Landscaping</li>
+                                <li>Planting</li>
+                                <li>Lawn Fertilizing</li>
+                                <li>Leaf Removal</li>
+                            </ul>
+                        </div>
+                        <div className={classes.left}>
+                        <img className={classes.examples} src={'../../hedges.png'} />
+                            <ul className={classes.each}>
+                                <li>Weed-eating</li>
+                                <li>Raking Services</li>
+                                <li>Weeding</li>
+                                <li>Tree Trimming</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
