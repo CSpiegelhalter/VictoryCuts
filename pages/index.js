@@ -3,8 +3,6 @@ import Head from 'next/head';
 import MainContent from '../components/home-page/mainContent';
 import Hero from '../components/home-page/hero';
 
-// import { getFeaturedPosts } from '../lib/posts-util';
-
 function HomePage(props) {
   return (
     <Fragment>
@@ -20,15 +18,5 @@ function HomePage(props) {
     </Fragment>
   );
 }
-
-// export function getStaticProps() {
-//   const featuredPosts = getFeaturedPosts();
-
-//   return {
-//     props: {
-//       posts: featuredPosts,
-//     },
-//   };
-// }
 
 export default HomePage;
