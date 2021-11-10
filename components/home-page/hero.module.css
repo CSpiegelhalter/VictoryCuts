@@ -159,10 +159,6 @@
     .glass {
         top: 30%;
       }
-      
-      .h1 {
-        font-size: x-small;
-      }
     .button {
         font-size: 12px;
         padding: 10px 20px;
@@ -172,10 +168,6 @@
   }
   
   @media only screen and (max-width: 340px) {
-
-    .h1 {
-      font-size: xx-small;
-    }
   .button {
       padding: 6px 16px;
     }

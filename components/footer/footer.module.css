@@ -1,7 +1,6 @@
 .top {
     background-color: #164A41;
     color: #ffffff;
-    /* margin-top: 10vh; */
     -webkit-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
     -moz-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
     box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
@@ -12,17 +11,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* bottom: 0; */
     margin-top: 20vh;
 }
 .topHeader {
     margin-top: 10vh; 
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
     font-weight: normal;
 }
 .bigHeader {
     font-weight: normal;
     margin: 0;
-    font-size: xxx-large;
+    font-size: 3rem;
 }
 
 .llc {
@@ -39,7 +39,6 @@
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    /* font-weight: normal; */
     line-height: 20px;
     margin: 0;
     outline: none;
@@ -54,9 +53,6 @@
     width: auto;
     z-index: 10;
     margin-top: 5vh;
-    /* top: 90%; */
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
   }
 
   
@@ -83,7 +79,6 @@
     width: 75vw;
     height: 4vh;
     border-bottom: 2px solid #ffffff;
-    /* position: absolute; */
     }
 
     .bottom {
@@ -97,3 +92,35 @@
         margin-right: 15px;
         margin-bottom: 10px;
     }
+
+      @media only screen  and (max-width : 675px) {
+        .bottom {
+            margin: 30px 10vw 0 10vw;
+        }
+      }
+    
+      @media only screen  and (max-width : 490px) {
+        .topHeader {
+            margin-top: 10vh; 
+            margin-bottom: 2vh;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        .bigHeader {
+            font-weight: normal;
+            margin: 0;
+            font-size: 2rem;
+        }
+      }
+    
+       @media only screen  and (max-width : 325px) {
+        .topHeader {
+            font-size: .9rem;
+        }
+        .bigHeader {
+            font-size: 1.8rem;
+        }
+        .bottom {
+            margin: 30px 5vw 0 5vw;
+        }
+      }
