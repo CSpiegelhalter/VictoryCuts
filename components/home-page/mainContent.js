@@ -31,7 +31,9 @@ function MainContent() {
 
             <div>
                 <div className={classes.why}>
+                    <div className={classes.containHead}>
                     <h2 className={classes.head}>Services we provide:</h2>
+                    </div>
                     <div className={classes.contain}>
                         <div className={classes.services}>
                             <div className={classes.left}>

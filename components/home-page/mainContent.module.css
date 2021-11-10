@@ -117,6 +117,8 @@
   }
 
   .why {
+      display: flex;
+      flex-direction: column;
     /* border: 3px solid black; */
     /* box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px; */
     margin: 80px;
@@ -127,6 +129,7 @@
   .contain {
       display: flex;
       justify-content: center;
+      margin-top: 50px;
   }
 
   .services {
@@ -147,7 +150,7 @@
   }
 
   .head {
-      margin-left: 100px;
+      /* margin-left: 100px; */
       margin-top: 20px;
       margin-bottom: 0;
       font-size: 3em;
@@ -222,6 +225,9 @@
     .examples {
         display: none;
     }
+    .head {
+        margin: auto;
+    }
     .each {
         height: 200px;
       font-size: 1.3rem;
@@ -236,7 +242,9 @@
         flex-direction: column;
     }
 
-
+    .vl {
+        display: none;
+    }
     .responsive1 {
         display: block;
         height: 145px;
@@ -252,6 +260,28 @@
       line-height: 175%;
     }
   }
+
+  @media only screen and (max-width : 600px) {
+
+    .containHead {
+        display: flex;
+        justify-content: center;
+        /* width: 100vw; */
+    }
+    .head {
+        font-size: 1.8rem;
+        width: fit-content;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+/* @media only screen and (max-width : 460px) {
+    .head {
+        font-size: 1.5rem;
+    }
+} */
+
   @media only screen  and (max-width : 450px) {
     .responsive1 {
         height: 95px;
@@ -261,14 +291,23 @@
     .each {
         height: 95px;
       font-size: .8rem;
-      line-height: 110%;
+      line-height: 120%;
     }
   }
 
-  @media only screen  and (max-width : 415px) {
-  
+   @media only screen  and (max-width : 350px) {
+    .responsive1 {
+        height: 80px;
+        width: 155px;
+    }
+    
+    .each {
+        height: 80px;
+      font-size: .8rem;
+      line-height: 120%;
+    }
   }
- 
+  
   
   
   
