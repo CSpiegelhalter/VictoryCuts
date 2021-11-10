@@ -129,7 +129,10 @@
       margin: auto;
       margin-top: 70px;
       width: 860px;
-      /* gap: 80px; */
+      
+  }
+  .contain {
+    /* margin: 0 auto; */
   }
 
 .eachL {
@@ -186,3 +189,135 @@
     /* margin-left: auto; */
     /* margin-right: 175px; */
   }
+
+  .responsive {
+      display: none;
+  }
+  .responsive1 {
+    display: none;
+}
+.responsivelast {
+    display: none;
+}
+.responsivetiny {
+    display: none;
+}
+
+  @media only screen and (min-width: 470px) {
+    
+  }
+  
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-width : 600px) {
+    
+  }
+
+  @media only screen  and (max-width : 623px) {
+    
+  }
+  
+  /* Desktops and laptops ----------- */
+  @media only screen  and (max-width : 1030px) {
+    .examples {
+        display: none;
+    }
+    .responsive {
+        display: block;
+        height: 200px;
+        width: 340px;
+    }
+ 
+    .services {
+        width: 680px;
+    }
+ 
+    .eachR li,
+    .eachL li {
+        font-size: 1rem;
+    }
+   }
+  
+  /* Large screens ----------- */
+  @media only screen  and (max-width : 850px) {
+    .responsive {
+        display: none !important;
+    }
+    .examples {
+        display: none;
+    }
+    .responsive1 {
+        display: block;
+        height: 135px;
+        width: 215px;
+    }
+ 
+    .services {
+        width: 430px !important;
+    }
+ 
+    .eachR li,
+    .eachL li {
+        font-size: .5rem !important;
+    }
+   
+  }
+  @media only screen  and (max-width : 600px) {
+    .responsive {
+        display: none !important;
+    }
+    .examples {
+        display: none;
+    }
+    .responsive1 {
+        display: none !important;
+    }
+    .responsivelast {
+        display: block;
+        height: 100px;
+        width: 160px;
+    }
+ 
+    .services {
+        width: 320px !important;
+    }
+ 
+    .eachR li,
+    .eachL li {
+        font-size: .3rem !important;
+        line-height: 40%;
+    }
+  }
+
+  @media only screen  and (max-width : 415px) {
+    .responsive {
+        display: none !important;
+    }
+    .examples {
+        display: none;
+    }
+    .responsivelast {
+        display: none !important;
+    }
+    .responsivetiny {
+        display: block;
+        height: 68px;
+        width: 108px;
+    }
+ 
+    .services {
+        width: 216px !important;
+    }
+ 
+    .eachR li,
+    .eachL li {
+        font-size: .2rem !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 0% !important;
+    }
+  }
+ 
+  
+  
+  

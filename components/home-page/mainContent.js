@@ -32,9 +32,14 @@ function MainContent() {
             <div>
                 <div className={classes.why}>
                     <h2 className={classes.head}>Services we provide:</h2>
+                    <div className={classes.contain}>
                     <div className={classes.services}>
                         <div className={classes.left}>
                             <img className={classes.examples} src={'../../lawn2.webp'} alt={'Lawn Mowing'}/>
+                            <img className={classes.responsive} src={'../../responsive-5/lawn2.webp'} alt={'Lawn Mowing'}/>
+                            <img className={classes.responsive1} src={'../../responsive/lawn2.webp'} alt={'Lawn Mowing'}/>
+                            <img className={classes.responsivelast} src={'../../responsive-last/lawn2.webp'} alt={'Lawn Mowing'}/>
+                            <img className={classes.responsivetiny} src={'../../responsive-tiny/lawn2.webp'} alt={'Lawn Mowing'}/>
                             <ul className={classes.eachL}>
                                 <li>Lawn Mowing</li>
                                 <li>Edging</li>
@@ -52,9 +57,17 @@ function MainContent() {
                                 <li>Area Prep</li>
                             </ul>
                             <img className={classes.examples} src={'../../landscaping.webp'} alt={'Landscaping'} />
+                            <img className={classes.responsive1} src={'../../responsive/landscaping.webp'} alt={'Landscaping'} />
+                            <img className={classes.responsive} src={'../../responsive-5/landscaping.webp'} alt={'Landscaping'} />
+                            <img className={classes.responsivelast} src={'../../responsive-last/landscaping.webp'} alt={'Landscaping'} />
+                            <img className={classes.responsivetiny} src={'../../responsive-tiny/landscaping.webp'} alt={'Landscaping'} />
                         </div>
                         <div className={classes.left}>
                         <img className={classes.examples} src={'../../hedges.webp'} alt={'Hedge Trimming'}/>
+                        <img className={classes.responsive} src={'../../responsive-5/hedges.webp'} alt={'Hedge Trimming'}/>
+                        <img className={classes.responsive1} src={'../../responsive/hedges.webp'} alt={'Hedge Trimming'}/>
+                        <img className={classes.responsivelast} src={'../../responsive-last/hedges.webp'} alt={'Hedge Trimming'}/>
+                        <img className={classes.responsivetiny} src={'../../responsive-tiny/hedges.webp'} alt={'Hedge Trimming'}/>
                             <ul className={classes.eachL}>
                                 <li>Weed-eating</li>
                                 <li>Raking Services</li>
@@ -63,6 +76,7 @@ function MainContent() {
                                 <li>Basic Gardening</li>
                             </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
