@@ -231,6 +231,12 @@
   
   /* Large screens ----------- */
   @media only screen  and (max-width : 675px) {
+    .containsection {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .responsive1 {
         display: block;
         height: 145px;
