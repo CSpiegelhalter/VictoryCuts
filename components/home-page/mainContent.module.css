@@ -121,34 +121,29 @@
     /* box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px; */
     margin: 80px;
     margin-top: 80px;
+    justify-content: center;
+  }
+
+  .contain {
+      display: flex;
+      justify-content: center;
   }
 
   .services {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      margin-top: 70px;
-      width: 860px;
-      
+      display: flex;      
   }
-  .contain {
-    /* margin: 0 auto; */
-  }
+  
 
-.eachL {
-     margin: auto;
-}
-
-.eachR {
-
-     margin: auto;
-}
-  .eachR li,
-  .eachL li {
+  .each {
+      height: 270px;
       font-size: 1.3rem;
-      margin: 5px;
+      line-height: 250%;
+      margin: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      /* margin: 5px; */
       top: 0;
-      padding: 6px;
+      /* padding: 6px; */
   }
 
   .head {
@@ -174,8 +169,9 @@
 
   .left {
       display: flex;
-      justify-content: space-around;
-      right: 0;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      /* right: 0; */
       /* margin-right: auto; */
       /* float: left; */
       /* gap: 20vw; */
@@ -183,23 +179,24 @@
 
   .right {
     display: flex;
-    justify-content: space-around;
-    right: 0;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* right: 0; */
     /* gap: 20vw; */
     /* margin-left: auto; */
     /* margin-right: 175px; */
+  }
+
+  .contain {
+      /* width: auto;
+      margin: auto; */
+      /* align-items: center; */
   }
 
   .responsive {
       display: none;
   }
   .responsive1 {
-    display: none;
-}
-.responsivelast {
-    display: none;
-}
-.responsivetiny {
     display: none;
 }
 
@@ -218,105 +215,53 @@
   }
   
   /* Desktops and laptops ----------- */
-  @media only screen  and (max-width : 1030px) {
+  @media only screen  and (max-width : 930px) {
+    .responsive {
+        display: block;
+    }
     .examples {
         display: none;
     }
-    .responsive {
-        display: block;
+    .each {
         height: 200px;
-        width: 340px;
-    }
- 
-    .services {
-        width: 680px;
-    }
- 
-    .eachR li,
-    .eachL li {
-        font-size: 1rem;
+      font-size: 1.3rem;
+      line-height: 200%;
     }
    }
   
   /* Large screens ----------- */
-  @media only screen  and (max-width : 850px) {
-    .responsive {
-        display: none !important;
-    }
-    .examples {
-        display: none;
-    }
+  @media only screen  and (max-width : 675px) {
     .responsive1 {
         display: block;
-        height: 135px;
-        width: 215px;
+        height: 145px;
+        width: 220px;
     }
- 
-    .services {
-        width: 430px !important;
+    .responsive {
+        display: none;
     }
- 
-    .eachR li,
-    .eachL li {
-        font-size: .5rem !important;
+    
+    .each {
+        height: 145px;
+      font-size: 1rem;
+      line-height: 10%;
     }
-   
   }
-  @media only screen  and (max-width : 600px) {
-    .responsive {
-        display: none !important;
-    }
-    .examples {
-        display: none;
-    }
+  @media only screen  and (max-width : 450px) {
     .responsive1 {
-        display: none !important;
+        height: 95px;
+        width: 170px;
     }
-    .responsivelast {
-        display: block;
-        height: 100px;
-        width: 160px;
-    }
- 
-    .services {
-        width: 320px !important;
-    }
- 
-    .eachR li,
-    .eachL li {
-        font-size: .3rem !important;
-        line-height: 40%;
+    
+    .each {
+        height: 95px;
+      font-size: 1rem;
+      line-height: 10%;
     }
   }
 
-  /* @media only screen  and (max-width : 415px) {
-    .responsive {
-        display: none !important;
-    }
-    .examples {
-        display: none;
-    }
-    .responsivelast {
-        display: none !important;
-    }
-    .responsivetiny {
-        display: block;
-        height: 68px;
-        width: 108px;
-    }
- 
-    .services {
-        width: 216px !important;
-    }
- 
-    .eachR li,
-    .eachL li {
-        font-size: .2rem !important;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 0% !important;
-    }
-  } */
+  @media only screen  and (max-width : 415px) {
+  
+  }
  
   
   
