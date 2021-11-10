@@ -260,7 +260,7 @@
     
     .each {
         height: 95px;
-      font-size: 1rem;
+      font-size: .8rem;
       line-height: 110%;
     }
   }
