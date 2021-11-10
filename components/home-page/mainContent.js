@@ -5,9 +5,11 @@ function MainContent() {
     return (
         <section className={classes.about}>
             <div className={classes.gg}></div>
+            <div className={classes.anotherHeader}>
             <h1 className={classes.tit}>
                 The very best lawn care service in Pensacola.
             </h1>
+            </div>
             <div className={classes.line}></div>
             <div className={classes.start}>
                 <h2 className={classes.tit2}>Get started in 2 easy steps</h2>

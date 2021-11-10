@@ -17,10 +17,15 @@
 .tit {
     margin: auto;
     margin-top: 10vh;
-    justify-content: center;
+    width: 90%;
     padding: 10px;
-    border-radius: 10px;
     font-weight: normal;
+}
+.anotherHeader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 .tit2 {
     font-weight: normal;
@@ -39,8 +44,8 @@
     position: relative;
     display: block;
     transform: scale(var(--ggs,1));
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 46px;
     margin: auto;
 }
 .gg::after,
@@ -55,7 +60,7 @@
     border-right: 2px solid;
     transform: rotate(45deg);
     left: 7px;
-    top: 3px
+    top: 3px;
 }
 .gg::after {
     top: 16px
@@ -74,18 +79,14 @@
     width: 50vw;
     height: 4vh;
     border-bottom: 1px solid black;
-    /* position: absolute; */
     }
 
 .icons {
-    /* display: block; */
     background-color: #ffffff;
     width: 200px;
     height: 200px;
-    /* width: 40px; 
-  height: 40px; */
   border-radius: 50%;
-  display: flex; /* or inline-flex */
+  display: flex;
   align-items: center; 
   justify-content: center;
 }
@@ -93,7 +94,6 @@
 .containsection {
     display: flex;
     margin: auto;
-    /* margin-top: 8px; */
 }
 
 .sections {
@@ -119,8 +119,6 @@
   .why {
       display: flex;
       flex-direction: column;
-    /* border: 3px solid black; */
-    /* box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px; */
     margin: 80px;
     margin-top: 80px;
     justify-content: center;
@@ -144,28 +142,19 @@
       margin: auto;
       margin-top: 0;
       margin-bottom: 0;
-      /* margin: 5px; */
       top: 0;
-      /* padding: 6px; */
   }
 
   .head {
-      /* margin-left: 100px; */
       margin-top: 20px;
       margin-bottom: 0;
       font-size: 3em;
-      
       color: #4D774E;
   }
 
   .examples {
-    /* display: inline-block !important; */
-    /* float: left; */
     height: 270px;
     width: 430px;
-    /* margin: auto; */
-    /* margin-left: 75px; */
-    /* border-radius: 10%; */
     -webkit-box-shadow: inset 0px 0px 25px -4px #000000; 
     box-shadow: inset 0px 0px 25px -4px #000000;
   }
@@ -173,27 +162,11 @@
   .left {
       display: flex;
       flex-direction: column;
-      /* justify-content: space-around; */
-      /* right: 0; */
-      /* margin-right: auto; */
-      /* float: left; */
-      /* gap: 20vw; */
   }
 
   .right {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    /* right: 0; */
-    /* gap: 20vw; */
-    /* margin-left: auto; */
-    /* margin-right: 175px; */
-  }
-
-  .contain {
-      /* width: auto;
-      margin: auto; */
-      /* align-items: center; */
   }
 
   .responsive {
@@ -202,20 +175,6 @@
   .responsive1 {
     display: none;
 }
-
-  @media only screen and (min-width: 470px) {
-    
-  }
-  
-  
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-width : 600px) {
-    
-  }
-
-  @media only screen  and (max-width : 623px) {
-    
-  }
   
   /* Desktops and laptops ----------- */
   @media only screen  and (max-width : 930px) {
@@ -275,12 +234,6 @@
         margin: auto;
     }
 }
-
-/* @media only screen and (max-width : 460px) {
-    .head {
-        font-size: 1.5rem;
-    }
-} */
 
   @media only screen  and (max-width : 450px) {
     .responsive1 {
