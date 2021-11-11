@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin: 11vh 250px 20vh 250px;
+  margin-top: 11vh;
+  /* margin: 11vh 250px 20vh 250px; */
   align-items: center;
- 
+  
 
 }
 
@@ -105,6 +106,36 @@
 }
 
 .heading1 {
-  margin-bottom: 30px;
-  text-decoration: underline;
+  color: #4D774E;
+  font-size: 2em;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100vw;
+  /* text-decoration: underline; */
+}
+.number {
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.heading2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 2em;
+  width: 100vw;
+}
+
+@media only screen  and (max-width : 638px) {
+  .heading1 {
+    font-size: 2em;
+    width: 80vw;
+  }
 }

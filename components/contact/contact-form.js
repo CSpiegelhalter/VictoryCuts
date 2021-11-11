@@ -113,9 +113,10 @@ class ContactForm extends Component {
     return (
       <>
         <div id="contact" className={classes.contactForm}>
-          <h1 className={classes.heading1}>Call us: (111)111-1111</h1>
-          <h1 className={classes.heading}>OR</h1>
-          <h1 className={classes.heading1}>Send us a message.</h1>
+          <h1 className={classes.heading1}>Call to recieve your free quote TODAY</h1>
+          <h1 className={classes.number}>(111)111-1111</h1>
+          <p className={classes.heading}>OR</p>
+          <p className={classes.heading2}>Send us a message.</p>
           <Form className={classes.form} onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup className={classes.formgroup}>
               
