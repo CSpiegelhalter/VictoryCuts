@@ -5,8 +5,8 @@
 }
 
 .title {
-    margin: 0 auto;
-    width: 30%;
+    margin: auto;
+    width: 50%;
     font-size: 3em;
 }
 
@@ -27,6 +27,137 @@
 
 .about {
     font-size: 1.5em;
-    margin: 0 100px 30px 100px;
+    margin: 0 75px 30px 100px;
     font-weight: normal;
+}
+
+.us1 {
+    display: none;
+}
+
+@media only screen  and (max-width : 944px) {
+    .us1 {
+        display: block;
+        float: left;
+        width: 256px;
+        height: 341px;
+        margin: 0 60px 30px 100px;
+    }
+    .us {
+        display: none;
+    }
+  }
+
+  @media only screen  and (max-width : 855px) {
+    
+.title {
+    width: 55%;
+    font-size: 2.5em;
+}
+.start {
+    margin-top: 10vh;
+}
+
+}
+
+  @media only screen  and (max-width : 700px) {
+    .about {
+        font-size: 1.5em;
+        margin: 0 50px 30px 50px;
+
+    }
+    .us1 {
+        margin: 0 50px 30px 50px;
+    }
+  }
+
+   @media only screen  and (max-width : 655px) {
+    .title {
+        width: 60%;
+        font-size: 2.5em;
+    }
+
+  }
+
+  @media only screen  and (max-width : 600px) {
+    .title {
+        width: 55%;
+        font-size: 2.2em;
+    }
+    .about {
+        font-size: 1.3em;
+    }
+
+  }
+
+  @media only screen  and (max-width : 585px) {
+    .us1 {
+        width: 128px;
+        height: 171px;
+        margin: 0 50px 15px 50px;
+    }
+    .title {
+        width: 60%;
+        font-size: 2.2em;
+    }
+}
+
+@media only screen  and (max-width : 535px) {
+    .title {
+        width: 60%;
+        font-size: 2em;
+    }
+}
+
+@media only screen  and (max-width : 485px) {
+    .title {
+        width: 70%;
+        font-size: 2em;
+    }
+    .us1 {
+        margin: 0 25px 10px 40px;
+    }
+    .about {
+        font-size: 1.5em;
+        margin: 0 60px 30px 40px;
+    }
+}
+
+@media only screen  and (max-width : 425px) {
+    .about {
+        font-size: 1em;
+        margin: 0 50px 30px 40px;
+    }
+    .title {
+        width: 65%;
+        font-size: 1.8em;
+    }
+}
+
+@media only screen  and (max-width : 405px) {
+    .title {
+        width: 65%;
+        font-size: 1.6em;
+    }
+}
+
+@media only screen  and (max-width : 365px) {
+    .title {
+        width: 60%;
+        font-size: 1.3em;
+    }
+    .about {
+        font-size: .9em;
+        margin: 0 30px 30px 30px;
+    }
+    .us1 {
+        margin: 0 25px 10px 30px;
+    }
+}
+
+@media only screen  and (max-width : 325px) {
+    .title {
+        width: 65%;
+        font-size: 1.3em;
+    }
 }

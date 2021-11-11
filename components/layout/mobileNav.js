@@ -12,11 +12,7 @@ function MobileNav() {
 
     
     function close() {
-      // e.preventdefault()
-      console.log(isOpen)
-      // if (isOpen == false) {
-      //   setOpen(!isOpen)
-      // }
+
       setOpen(!isOpen)
     }
 

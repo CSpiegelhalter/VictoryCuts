@@ -2,6 +2,8 @@
   background-color: #4D774E;
     width: 100%;
     position:fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     height: 3rem;
