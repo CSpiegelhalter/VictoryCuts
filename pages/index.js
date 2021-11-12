@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
-import MainContent from '../components/home-page/mainContent.js';
-import Hero from '../components/home-page/hero';
+import dynamic from 'next/dynamic'
 
 function HomePage(props) {
+
+  const Hero = dynamic(() => import("../components/home-page/hero"));
+  const MainContent = dynamic(() => import("../components/home-page/mainContent.js"));
   return (
     <Fragment>
       <Head>

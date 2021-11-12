@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
-
-import Aboutus from '../components/abousus.js';
+import dynamic from 'next/dynamic'
 
 function About() {
+    const Aboutus = dynamic(() => import("../components/abousus.js"));
   return (
     <Fragment>
       <Head>

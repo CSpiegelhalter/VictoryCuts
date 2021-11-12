@@ -1,9 +1,9 @@
 import Head from 'next/head';
-
+import dynamic from 'next/dynamic'
 import '../styles/globals.css';
-import Layout from '../components/layout/layout';
 
 function MyApp({ Component, pageProps }) {
+  const Layout = dynamic(() => import("../components/layout/layout"));
   return (
     <Layout>
       <Head>

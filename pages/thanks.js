@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
-import ThankYou from "../components/thanks/thanks";
+import dynamic from 'next/dynamic'
 
 function Thanks() {
+    const ThankYou = dynamic(() => import("../components/thanks/thanks"));
     return(
         <Fragment>
             <ThankYou />

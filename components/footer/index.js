@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Logo from '../layout/logo';
 import classes from './footer.module.css';
 import { useRouter } from 'next/router';

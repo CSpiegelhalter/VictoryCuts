@@ -1,6 +1,3 @@
-import classes from './logo.module.css';
-import Image from 'next/image';
-import myLogo from '../../public/logo.png'
 
 function Logo() {
   return (

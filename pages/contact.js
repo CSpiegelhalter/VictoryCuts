@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
-
-import ContactForm from '../components/contact/contact-form';
+import dynamic from 'next/dynamic'
 
 function ContactPage() {
+  const ContactForm = dynamic(() => import("../components/contact/contact-form"));
   return (
     <Fragment>
       <Head>

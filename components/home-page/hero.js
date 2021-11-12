@@ -1,5 +1,3 @@
-import Image from 'next/image';
-// import lawn from '../images/lawn.jpg'
 import classes from './hero.module.css';
 import { useRouter } from 'next/router';
 
