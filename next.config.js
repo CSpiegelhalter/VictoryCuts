@@ -1,5 +1,9 @@
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 module.exports = {
 
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
