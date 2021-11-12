@@ -12,7 +12,7 @@ function HomePage(props) {
         <title>Victory Cuts</title>
         <meta
           name='description'
-          content='Lawncare, Lawn services, manicured lawn'
+          content='Lawncare, Lawn services, manicured lawn. Company that specializes in lawn care services. We are the best in Pensacola, FL!'
         />
       </Head>
       <Hero /><MainContent />

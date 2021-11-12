@@ -7,8 +7,8 @@ function About() {
   return (
     <Fragment>
       <Head>
-        <title>Contact Me</title>
-        <meta name='description' content='Send me your messages!' />
+        <title>About us</title>
+        <meta name='Company information' content='Information about our Lawncare services. We go into exactly what our lawncare services stands for, what we believe in, and what we find important.' />
       </Head>
       <Aboutus />
     </Fragment>

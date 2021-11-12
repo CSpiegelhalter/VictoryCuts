@@ -8,7 +8,7 @@ function ContactPage() {
     <Fragment>
       <Head>
         <title>Contact Me</title>
-        <meta name='description' content='Send me your messages!' />
+        <meta name='Contact company' content='Send messages to our company. This is how you contact us, through email or phone. Conact us for a quote!' />
       </Head>
       <ContactForm />
     </Fragment>
