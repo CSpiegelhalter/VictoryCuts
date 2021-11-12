@@ -4,7 +4,7 @@ import { DeviceSize } from '../../responsive';
 import dynamic from 'next/dynamic'
 
 function Layout(props) {
-  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile})
+  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile })
 
   const MobileNav = dynamic(() => import("./mobileNav"));
   const MainNavigation = dynamic(() => import("./main-navigation"));
@@ -15,6 +15,7 @@ function Layout(props) {
       {!isMobile && <MainNavigation />}
       {isMobile && <MobileNav />}
       <main>{props.children}</main>
+
       <Footer />
     </Fragment>
   );

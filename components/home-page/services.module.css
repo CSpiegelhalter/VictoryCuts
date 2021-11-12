@@ -237,12 +237,12 @@
 
   @media only screen  and (max-width : 450px) {
     .responsive1 {
-        height: 95px;
-        width: 170px;
+        height: 105px;
+        width: 180px;
     }
     
     .each {
-        height: 95px;
+        height: 105px;
       font-size: .8rem;
       line-height: 120%;
     }
@@ -250,12 +250,12 @@
 
    @media only screen  and (max-width : 350px) {
     .responsive1 {
-        height: 80px;
-        width: 155px;
+        height: 90px;
+        width: 165px;
     }
     
     .each {
-        height: 80px;
+        height: 90px;
       font-size: .8rem;
       line-height: 120%;
     }
