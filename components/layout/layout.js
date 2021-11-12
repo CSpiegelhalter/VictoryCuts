@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { DeviceSize } from '../../../../responsive';
+import { DeviceSize } from '../../responsive';
 import dynamic from 'next/dynamic'
 
 function Layout(props) {
