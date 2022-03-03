@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Router from 'next/router';
-import Logo from './logo';
+import Logo from './greenLogoresy';
 import { MenuToggle } from './menuToggle';
 import classes from './mobileNav.module.css';
 

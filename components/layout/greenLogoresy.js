@@ -2,10 +2,10 @@
 function Logo() {
   return (
   <img
-    src= {'../../logo.png'}
+    src= {'../../greenLogo.png'}
     alt='Lawncare Pensacola, Florida'
-    width={75}
-    height={75}
+    width={40}
+    height={40}
   />
   );
 }

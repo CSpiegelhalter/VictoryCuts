@@ -1,4 +1,4 @@
-import Logo from '../layout/logo';
+import Logo from '../layout/blueLogo';
 import classes from './footer.module.css';
 import { useRouter } from 'next/router';
 

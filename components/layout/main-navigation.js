@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Logo from './logo';
+import Logo from './greenLogo';
 import classes from './main-navigation.module.css';
 
 function MainNavigation() {
