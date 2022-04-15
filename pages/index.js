@@ -10,10 +10,6 @@ function HomePage(props) {
     <Fragment>
       <Head>
         <title>Victory Cuts</title>
-        <meta
-          name='description'
-          content='Lawncare, Lawn services, manicured lawn. Company that specializes in lawn care services. We are the best in Pensacola, FL!'
-        />
         <meta name="google-site-verification" content="DHrCf6sm6wo9--y00MifwUcrAa_IH3UpUXwVeLNhUcU" />
         <link rel="shortcut icon" href='/favicon.png' />
       </Head>
