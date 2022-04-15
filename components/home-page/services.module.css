@@ -132,7 +132,7 @@
 
   .services {
       display: flex;   
-      width: 100%;
+      width: 75%;
       justify-content: space-between;
   }
   
@@ -179,7 +179,12 @@
   .responsive1 {
     display: none;
 }
-  
+@media only screen  and (max-width : 1250px) {
+    .services {
+        width: 100%
+    }
+    
+   }
   /* Desktops and laptops ----------- */
   @media only screen  and (max-width : 930px) {
     .responsive {
@@ -202,7 +207,7 @@
    }
   
   /* Large screens ----------- */
-  @media only screen  and (max-width : 675px) {
+  @media only screen  and (max-width : 790px) {
     .containsection {
         display: flex;
         flex-direction: column;
@@ -225,6 +230,9 @@
         height: 145px;
       font-size: 1rem;
       line-height: 175%;
+    }
+    .services {
+        width: 100%;
     }
   }
 
