@@ -115,6 +115,7 @@
 }
 .number {
   margin: 0;
+  margin-top: 5vh;
   text-align: center;
   width: 100vw;
 }

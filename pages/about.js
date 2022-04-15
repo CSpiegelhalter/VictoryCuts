@@ -9,6 +9,7 @@ function About() {
       <Head>
         <title>About us</title>
         <meta name='Company information' content='Information about our Lawncare services. We go into exactly what our lawncare services stands for, what we believe in, and what we find important.' />
+        <link rel="shortcut icon" href='/favicon.png' />
       </Head>
       <Aboutus />
     </Fragment>

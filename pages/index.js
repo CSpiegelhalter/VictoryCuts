@@ -14,6 +14,7 @@ function HomePage(props) {
           name='description'
           content='Lawncare, Lawn services, manicured lawn. Company that specializes in lawn care services. We are the best in Pensacola, FL!'
         />
+        <link rel="shortcut icon" href='/favicon.png' />
       </Head>
       <Hero /><MainContent />
       
