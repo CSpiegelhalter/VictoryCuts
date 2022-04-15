@@ -10,8 +10,8 @@ function HomePage(props) {
     <Fragment>
       <Head>
         <title>Victory Cuts</title>
-        <meta name="google-site-verification" content="DHrCf6sm6wo9--y00MifwUcrAa_IH3UpUXwVeLNhUcU" />
         <link rel="shortcut icon" href='/favicon.png' />
+        <meta name="google-site-verification" content="DHrCf6sm6wo9--y00MifwUcrAa_IH3UpUXwVeLNhUcU" />
       </Head>
       <Hero /><MainContent />
       
