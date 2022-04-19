@@ -1,52 +1,44 @@
-.hero {
-  text-align: center;
-  position: relative;
-  top: 3rem;
-  display: flex;
-  width: 100%;
-  margin: 0;
-  
-}
-
-
-
-.raw {
-  background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url('../../public/lawn.webp');
+.imageContainer {
+  /* background-color: #a9a9a9; */
+  /* position: absolute; */
+  /* display: flex; */
   margin: 0;
   padding: 0;
   width: 100%;
   height: 583px;
 }
 
-.glass {
-  position: absolute;
-  color: white;
+.container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(11px);
-  background-color: rgba(18,92,19, 0.255);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 1px rgba(255,255,255,0.4) solid;
-  border-bottom: 1px rgba(40,40,40,0.35) solid;
-  border-right: 1px rgba(40,40,40,0.35) solid;
-  top:30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
   width: 75%;
 }
-
 .h1 {
-  
+ margin: auto;
   font-family: 'Playfair Display', serif;
   color:#ffffff;    
   letter-spacing:1px;
-  font-weight:normal;
-  font-size: 2rem;
+  font-weight:700;
+  font-size: 50px;
 }
-
+.h2 {
+  margin: auto;
+  margin-top: 5vh;
+   font-family: 'Playfair Display', serif;
+   color:#ffffff;    
+   letter-spacing:1px;
+   font-weight:450;
+   font-size: 30px;
+ }
 
 
 /* CSS */
@@ -101,23 +93,11 @@
 
  
   @media only screen  and (max-width : 1060px) {
-    .glass {
-      top: 30%;
-    }
-    
-    .h1 {
-      font-size: x-large;
-    }
+
   }
 
   @media only screen  and (max-width : 915px) {
-    .glass {
-      top: 26%;
-    }
-    
-    .h1 {
-      font-size: larger;
-    }
+
   .button {
       padding: 23px 33px;
       top: 70%;
@@ -125,8 +105,8 @@
   }
 
   @media only screen  and (max-width : 755px) {
-    .h1 {
-      font-size: medium;
+    .imageContainer {
+      height: 480px;
     }
   .button {
       font-size: 16px;
@@ -135,9 +115,12 @@
   }
 
   @media only screen  and (max-width : 623px) {
-    .raw {
-      background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url('../../public/mobileLawn.webp');
-      height: 390px;
+
+    .h1 {
+      font-size: 40px;
+    }
+    .h2 {
+      font-size: 20px;
     }
   .button {
       padding: 23px 33px;
@@ -147,18 +130,25 @@
 
   @media only screen and (max-width : 600px) {
     
-    .h1 {
-      font-size: SMALL;
-    }
+ 
   .button {
       padding: 19px 29px;
     }
   }
 
+  @media only screen  and (max-width : 500px) {
+
+    .h1 {
+      font-size: 35px;
+    }
+    .h2 {
+      font-size: 15px;
+    }
+  
+  }
+
   @media only screen and (max-width: 470px) {
-    .glass {
-        top: 30%;
-      }
+
     .button {
         font-size: 12px;
         padding: 10px 20px;
@@ -166,10 +156,15 @@
       }
       
   }
-  
-  @media only screen and (max-width: 340px) {
-  .button {
-      padding: 6px 16px;
+
+  @media only screen  and (max-width : 445px) {
+
+    .h1 {
+      font-size: 30px;
     }
-      
+    .h2 {
+      font-size: 10px;
+    }
+  
   }
+  

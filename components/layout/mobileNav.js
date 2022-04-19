@@ -21,7 +21,7 @@ function MobileNav() {
     <div className={classes.header}>
         
       <Link href='/'>
-        <a>
+        <a className={classes.logo}>
           <Logo />
         </a>
       </Link>
