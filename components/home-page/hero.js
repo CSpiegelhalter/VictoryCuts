@@ -10,7 +10,7 @@ function Hero() {
   return (
     <>
       <Head>
-        <link rel='preload' href={imageUrl} as='image' />
+        <link rel='preload' href={'../../public/lawn.webp'} as='image' />
       </Head>
       <div className={classes.imageContainer}>
       <Image 
