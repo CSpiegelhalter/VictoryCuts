@@ -16,7 +16,7 @@ function HomePage(props) {
       </Head>
       <div className={classes.container}>
         <Hero />
-        <MainContent />
+        {/* <MainContent /> */}
       </div>
     </Fragment>
   );
