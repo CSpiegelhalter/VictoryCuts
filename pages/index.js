@@ -6,7 +6,6 @@ import classes from '../styles/index.module.css'
 
 function HomePage(props) {
 
-  // const Hero = dynamic(() => import("../components/home-page/hero"));
   const MainContent = dynamic(() => import("../components/home-page/mainContent.js"));
   return (
     <Fragment>

@@ -6,6 +6,8 @@ import landscaping from '../../public/landscaping.webp'
 
 function Services() {
 
+    
+
     return (
         <div className={classes.about}>
             <div>
@@ -17,11 +19,10 @@ function Services() {
                         <div className={classes.left}>
                             <div className={classes.imageContainer}>
                                 <Image
-                                    // className={classes.examples}
                                     src={lawnMower}
                                     alt={'Lawn Mowing'}
                                     layout='fill'
-                                   
+
                                     width={1}
                                     height={1}
                                 />
@@ -42,7 +43,6 @@ function Services() {
                             </ul>
                             <div className={classes.imageContainer}>
                                 <Image
-                                    // className={classes.examples} 
                                     src={hedges}
                                     alt={'Hedge Trimming'}
                                     layout='fill'
@@ -55,7 +55,6 @@ function Services() {
                         <div className={classes.left}>
                             <div className={classes.imageContainer}>
                                 <Image
-                                    // className={classes.examples} 
                                     src={landscaping}
                                     alt={'Landscaping'}
                                     layout='fill'
