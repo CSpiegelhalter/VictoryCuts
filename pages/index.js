@@ -11,7 +11,7 @@ function HomePage(props) {
     <Fragment>
       <Head>
         <title>Victory Cuts</title>
-        <link rel="shortcut icon" href='/favicon.png' />
+        <link rel="shortcut icon" href='/favicon.ico' />
         <meta name="google-site-verification" content="DHrCf6sm6wo9--y00MifwUcrAa_IH3UpUXwVeLNhUcU" />
       </Head>
       <div className={classes.container}>

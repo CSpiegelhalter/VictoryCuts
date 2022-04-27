@@ -9,7 +9,7 @@ function ContactPage() {
       <Head>
         <title>Contact Me</title>
         <meta name='Contact company' content='Send messages to our company. This is how you contact us, through email or phone. Conact us for a quote!' />
-        <link rel="shortcut icon" href='/favicon.png' />
+        <link rel="shortcut icon" href='/favicon.ico' />
       </Head>
       <ContactForm />
     </Fragment>
