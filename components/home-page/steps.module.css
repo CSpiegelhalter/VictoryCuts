@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    top: 3rem;
+    top: 0rem;
     margin: 0;
     padding: 0;
     -webkit-box-shadow: 0 1px 3px rgb(15, 15, 15, 013);
@@ -19,14 +19,10 @@
     margin-top: 10vh;
     width: 90%;
     padding: 10px;
-    font-weight: normal;
-}
-.anotherHeader {
-    display: flex;
-    justify-content: center;
+    font-weight: 450;
     text-align: center;
-    align-content: center;
 }
+
 .tit2 {
     font-weight: normal;
     margin: auto;
@@ -116,84 +112,6 @@
     height: 215px;
   }
 
-  .why {
-      display: flex;
-      flex-direction: column;
-    margin: 80px;
-    margin-top: 80px;
-    justify-content: center;
-  }
-
-  .contain {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-  }
-
-  .services {
-      display: flex;      
-  }
-  
-
-  .each {
-      height: 270px;
-      font-size: 1.3rem;
-      line-height: 250%;
-      margin: auto;
-      margin-top: 0;
-      margin-bottom: 0;
-      top: 0;
-  }
-
-  .head {
-      margin-top: 20px;
-      margin-bottom: 0;
-      font-size: 3em;
-      color: #4D774E;
-  }
-
-  .examples {
-    height: 270px;
-    width: 430px;
-    -webkit-box-shadow: inset 0px 0px 25px -4px #000000; 
-    box-shadow: inset 0px 0px 25px -4px #000000;
-  }
-
-  .left {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .right {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .responsive {
-      display: none;
-  }
-  .responsive1 {
-    display: none;
-}
-  
-  /* Desktops and laptops ----------- */
-  @media only screen  and (max-width : 930px) {
-    .responsive {
-        display: block;
-    }
-    .examples {
-        display: none;
-    }
-    .head {
-        margin: auto;
-    }
-    .each {
-        height: 200px;
-      font-size: 1.3rem;
-      line-height: 200%;
-    }
-   }
-  
   /* Large screens ----------- */
   @media only screen  and (max-width : 675px) {
     .containsection {
@@ -204,63 +122,22 @@
     .vl {
         display: none;
     }
-    .responsive1 {
-        display: block;
-        height: 145px;
-        width: 220px;
-    }
-    .responsive {
-        display: none;
-    }
-    
-    .each {
-        height: 145px;
-      font-size: 1rem;
-      line-height: 175%;
-    }
+
   }
 
-  @media only screen and (max-width : 600px) {
+  @media only screen  and (max-width : 621px) {
+    .tit {
+        font-weight: 350;
+        font-size: 20px;
+    }
 
-    .containHead {
-        display: flex;
-        justify-content: center;
-        /* width: 100vw; */
-    }
-    .head {
-        font-size: 1.8rem;
-        width: fit-content;
-        height: 100%;
-        margin: auto;
-    }
+  }
+
+  @media only screen  and (max-width : 675px) {
+
+
 }
 
-  @media only screen  and (max-width : 450px) {
-    .responsive1 {
-        height: 95px;
-        width: 170px;
-    }
-    
-    .each {
-        height: 95px;
-      font-size: .8rem;
-      line-height: 120%;
-    }
-  }
-
-   @media only screen  and (max-width : 350px) {
-    .responsive1 {
-        height: 80px;
-        width: 155px;
-    }
-    
-    .each {
-        height: 80px;
-      font-size: .8rem;
-      line-height: 120%;
-    }
-  }
-  
   
   
   

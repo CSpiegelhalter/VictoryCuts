@@ -2,8 +2,6 @@ import React, { Component, useEffect } from 'react'
 import {withRouter} from 'next/router'
 import emailjs from 'emailjs-com'
 import classes from './contact-form.module.css'
-import { WithRouterProps } from 'next/dist/client/with-router'
-
 import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
 
 class ContactForm extends Component {

@@ -7,12 +7,10 @@ function MainContent() {
     const Services = dynamic(() => import('./services'))
 
     return (
-        <section>
+        <>
             <Steps />
             <Services />
-
-
-        </section>
+        </>
     )
 }
 

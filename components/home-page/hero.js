@@ -2,26 +2,25 @@ import classes from './hero.module.css';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image'
+import imageUrl from '../../public/lawn.webp'
 
 function Hero() {
   const router = useRouter()
 
-  const imageUrl = '/lawn.webp'
   return (
     <>
       <Head>
         <link rel='preload' href={imageUrl} as='image' />
       </Head>
-      {/* <div className={classes.imageContainer}> */}
+      <div className={classes.imageContainer}>
       <Image 
+      alt='Beautiful grass with morning-dew resting on top'
       src={imageUrl} 
-      width='100vw'
-      height='40px'
       quality={100}
-      layout='responsive'
+      layout='fill'
       priority={true}
-      className={classes.raw} />
-{/* </div> */}
+       />
+</div>
       <div className={classes.container}>
         <p className={classes.h1}>
          Lawncare made easy
