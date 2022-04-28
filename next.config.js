@@ -7,34 +7,34 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.plugins.push(new OptimizeCSSAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
-      },
-      canPrint: true
-    }))
-    config.plugins.push(new UglifyJsPlugin({
-      uglifyOptions: {
-        exclude: /react\.js/,
-        parallel: true,
-        cache: true,
-      },
-    }))
+    // config.plugins.push(new OptimizeCSSAssetsPlugin({
+    //   cssProcessorOptions: {
+    //     map: {
+    //       inline: false,
+    //       annotation: true,
+    //     }
+    //   }
+    // }))
+    // config.plugins.push(new UglifyJsPlugin({
+    //   uglifyOptions: {
+    //     exclude: /react\.js/,
+    //     parallel: true,
+    //     cache: true,
+    //   },
+    // }))
 
 
-    if (!isServer) {
-      config.optimization.splitChunks.cacheGroups = {
-        ...config.optimization.splitChunks.cacheGroups,
-        '@sentry': {
-          test: /[\\/]node_modules[\\/](@sentry)[\\/]/,
-          name: '@sentry',
-          priority: 10,
-          reuseExistingChunk: false,
-        },
-      };
-    }
+    // if (!isServer) {
+    //   config.optimization.splitChunks.cacheGroups = {
+    //     ...config.optimization.splitChunks.cacheGroups,
+    //     '@sentry': {
+    //       test: /[\\/]node_modules[\\/](@sentry)[\\/]/,
+    //       name: '@sentry',
+    //       priority: 10,
+    //       reuseExistingChunk: false,
+    //     },
+    //   };
+    // }
 
     return config;
 
