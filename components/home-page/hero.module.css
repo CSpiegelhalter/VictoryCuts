@@ -50,7 +50,6 @@
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  /* font-size: 16px; */
   font-size: 20px;
   font-weight: normal;
   line-height: 20px;
@@ -89,16 +88,15 @@
   opacity: 1;
 }
 
+.mobileHeroImage {
+  display: none !important;
+}
 
 
 @media only screen and (max-width : 1140px) {
 
-
-
- 
-
   .h2 {
-    top:2vh;
+    top: 2vh;
     margin-top: 6vh;
   }
 }
@@ -108,41 +106,7 @@
   .button {
     font-size: 16px;
     padding: 23px 33px;
-    /* top: 43%; */
   }
-  /* .container {
-    top: 17%;
-  } */
-/* 
-  .h1, .h2 {
-    font-size: 30px;
-  }
-
-  .h2 {
-    top:2vh;
-    margin-top: 6vh;
-  } */
-}
-
-@media only screen and (max-width : 755px) {
-
-  /* .button {
-    font-size: 16px;
-    padding: 23px 33px;
-    top: 43%;
-  }
-  .container {
-    top: 12%;
-  }
-
-  .h1, .h2 {
-    font-size: 30px;
-  }
-
-  .h2 {
-    top:2vh;
-    margin-top: 6vh;
-  } */
 }
 
 @media only screen and (max-width : 623px) {
@@ -164,7 +128,7 @@
   }
 
   .h2 {
-    top:2vh;
+    top: 2vh;
     margin-top: 1vh;
     font-size: 27px;
   }
@@ -185,19 +149,13 @@
 
   .button {
     top: 35%;
-    padding: 10px 20px;
   }
 
   .h2 {
-    top:2vh;
+    top: 2vh;
     margin-top: 1vh;
     font-size: 22px;
   }
-}
-
-@media only screen and (max-width : 500px) {
-
-
 }
 
 @media only screen and (max-width: 470px) {
@@ -205,31 +163,70 @@
   .imageContainer {
     height: 250px;
   }
+
   .button {
     top: 30%;
     padding: 10px 20px;
   }
+
   .container {
     top: 10%;
   }
-
-
-  
-
-  
-
 }
 
-@media only screen and (max-width : 445px) {
+@media only screen and (max-width : 453px) {
+  .container {
+    top: 23vh;
+    width: 95%;
+  }
+
+  .button {
+    font-size: 20px;
+    font-weight: bold;
+    top: 80%;
+    padding: 26px 43px;
+  }
+
   .h1 {
-    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 35px;
   }
+
   .h2 {
-    font-size: 15px;
+    margin-top: 7vh;
+    letter-spacing: 1px;
+    font-weight: 450;
+    font-size: 20px;
+  }
+
+  .imageContainer {
+    height: 100vh;
+  }
+
+  .heroImage {
+    display: none !important
+  }
+
+  .mobileHeroImage {
+    display: block !important;
   }
 
 }
 
+@media only screen and (max-width : 453px) {
+  .container {
+    top: 23vh;
+    width: 95%;
+  }
+
+  .button {
+    font-size: 20px;
+    font-weight: bold;
+    top: 80%;
+    padding: 26px 43px;
+    width: 75%;
+  }
 
 
-@media only screen and (max-width : 445px) {}
+}

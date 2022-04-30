@@ -5,7 +5,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-module.exports = {
+module.exports = withBundleAnalyzer({
+  
+    images: {
+      formats: ['image/avif', 'image/webp']
+    },
+  
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // config.plugins.push(new OptimizeCSSAssetsPlugin({
     //   cssProcessorOptions: {
@@ -39,6 +44,5 @@ module.exports = {
     return config;
 
   }
+})
 
-
-}

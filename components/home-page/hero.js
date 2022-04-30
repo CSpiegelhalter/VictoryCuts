@@ -2,11 +2,13 @@ import classes from './hero.module.css';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
 import imageUrl from '../../public/lawn.webp'
+import mobileImageUrl from '../../public/mobileHero.webp'
 
 function Hero() {
   const router = useRouter()
-
+ 
   return (
     <>
       <Head>
@@ -14,8 +16,17 @@ function Hero() {
       </Head>
       <div className={classes.imageContainer}>
       <Image 
+      className={classes.heroImage}
       alt='Beautiful grass with morning-dew resting on top'
-      src={imageUrl} 
+      src='/lawn.webp' 
+      quality={100}
+      layout='fill'
+      priority={true}
+       />
+        <Image 
+        className={classes.mobileHeroImage}
+      alt='Beautiful grass with morning-dew resting on top'
+      src='/mobileHero.webp'
       quality={100}
       layout='fill'
       priority={true}
